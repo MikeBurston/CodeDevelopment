@@ -1,4 +1,5 @@
 import snowflake.connector as sf
+import requests
 import pandas as pd
 
 ctx = sf.connect(
