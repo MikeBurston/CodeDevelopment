@@ -14,3 +14,5 @@ cnn = snowflake.connector.connect(
     schema = "public",
     role = "pc_rivery_role"
     )
+
+cs = cnn.cursor()
