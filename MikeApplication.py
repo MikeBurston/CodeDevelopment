@@ -15,11 +15,3 @@ cnn = snowflake.connector.connect(
   role = "pc_rivery_role"
   )
 
-cs = cnn.cursor()
-sql = "SELECT * FROM FRUIT_LOAD_LIST"
-cs.execute(sql)
-df = cs.fetch_pandas_all()
-cs = close()
-cnn.close()
-
-print(df.head(10))
