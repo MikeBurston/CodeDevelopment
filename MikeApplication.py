@@ -16,7 +16,7 @@ cnn = snowflake.connector.connect(
   )
 
 cs = cnn.cursor()
-sql = 'SELECT * FROM FRUIT_LOAD_LIST"
+sql = 'SELECT * FROM FRUIT_LOAD_LIST'
 cs.execute(sql)
 df = cs.fetch_pandas_all()
 cs = close()
