@@ -1,3 +1,3 @@
 import streamlit
 
-STREAMLIT.TEXT('Hello World')
+streamlit.text('Hello World')
