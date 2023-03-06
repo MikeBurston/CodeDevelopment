@@ -3,6 +3,6 @@ import pandas
 
 streamlit.text('Hello World')
 
-my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+my_fruit_list = pandas.read_csv("https://api.nal.usda.gov/fdc/v1/foods/list?api_key=gWioEyTJ4azAEr6PQm4slHxqU2CzzBln9JmoCf93")
 
 streamlit.dataframe(my_fruit_list)
