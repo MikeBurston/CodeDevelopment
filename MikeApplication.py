@@ -9,6 +9,7 @@ cnn = snowflake.connector.connect(
     password='Army501a!',
     account='su30921.ca-central-1.aws',
     warehouse='pc_rivery_wh',
+    database='pc_rivery_db',
     schema='public'
     )
 
