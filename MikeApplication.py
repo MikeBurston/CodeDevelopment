@@ -4,7 +4,7 @@ import snowflake.connector
 
 streamlit.text('Hello World')
 
-cnn = snowflake.connector.connect(
+conn = snowflake.connector.connect(
     user='BIGMIKE2023',
     password='Army501a!',
     account='su30921.ca-central-1.aws',
@@ -13,7 +13,7 @@ cnn = snowflake.connector.connect(
     schema='public'
     )
 
-cs = cnn.cursor()
+cs = conn.cursor()
 sql = "Select * From FRUIT_LOAD_LIST"
 cs.execute(sql)
 df = cs.fetch_pandas_all()
