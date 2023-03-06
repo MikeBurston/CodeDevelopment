@@ -18,3 +18,4 @@ cnn = snowflake.connector.connect(
 cs = cnn.cursor()
 sql = 'Select * From FRUIT_LOAD_LIST'
 cs.execute(sql)
+df = cs.fetch_pandas_all()
