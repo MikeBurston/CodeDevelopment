@@ -14,5 +14,5 @@ cs = ctx.cursor()
 
 cs.execute("select current_version(), current_user(), current_region()")
 one_row = cs.fetchone()
-print(one_row)
+streamlit.text(one_row)
 cs.close()
