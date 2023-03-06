@@ -10,13 +10,9 @@ ctx = sf.connect(
     schema = 'INFORMATION_SCHEMA'
     )
 
-print("Got the context object")
-
 cs = ctx.cursor()
 
 cs.execute("select current_version(), current_user(), current_region()")
 one_row = cs.fetchone()
-print("-------------------")
 print(one_row)
 cs.close()
-print("-----All Done------")
