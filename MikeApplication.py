@@ -14,6 +14,6 @@ cs = ctx.cursor()
 
 cs.execute("select current_version(), current_user(), current_region()")
 one_row = cs.fetchone()
-streamlit.dataframe(my_data_rows)
+streamlit.dataframe(one_row)
 print(one_row)
 cs.close()
