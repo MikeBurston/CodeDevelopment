@@ -1,1 +1,4 @@
-streamlit.text('Hello World')
+IMPORT STREAMLIT
+
+
+STREAMLIT.TEXT('Hello World')
