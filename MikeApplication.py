@@ -1,5 +1,4 @@
 import snowflake.connector as sf
-import requests
 import pandas as pd
 
 ctx = sf.connect(
@@ -11,9 +10,15 @@ ctx = sf.connect(
     schema = 'INFORMATION_SCHEMA'
     )
 
+print("Got the context object")
+
 cs = ctx.cursor()
 
 cs.execute("select current_version(), current_user(), current_region()")
-one_row = cs.fetchall()
-pd.dataframe(one_row)
+one_row = cs.fetchone()
+print("-------------------")
+print(one_row)
+df = pd.DataFrame(one_row)
+display(df)
 cs.close()
+print("-----All Done------")
