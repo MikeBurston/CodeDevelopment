@@ -14,7 +14,6 @@ ctx = sf.connect(
 cs = ctx.cursor()
 
 cs.execute("select current_version(), current_user(), current_region()")
-one_row = cs.fetchone()
+one_row = cs.fetchall()
 streamlit.dataframe(one_row)
-print(one_row)
 cs.close()
