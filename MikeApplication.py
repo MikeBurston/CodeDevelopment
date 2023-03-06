@@ -22,3 +22,5 @@ df = cs.fetch_pandas_all()
 
 cs.close()
 cnn.close()
+
+print(df.head(5))
