@@ -1,5 +1,5 @@
 import streamlit
-import pandas
+import pandas as pd
 import snowflake.connector
 
 streamlit.text('Hello World')
