@@ -1,4 +1,3 @@
-
-IMPORT STREAMLIT
+import streamlit
 
 STREAMLIT.TEXT('Hello World')
